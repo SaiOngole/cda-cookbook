@@ -1,0 +1,7 @@
+name             'cda-cookbook'
+maintainer       'Sai Ongole'
+maintainer_email 'songole@amplify.com'
+license          'All rights reserved'
+description      'Installs/Configures cda-cookbook'
+long_description 'Installs/Configures cda-cookbook'
+version          '0.1.0'
