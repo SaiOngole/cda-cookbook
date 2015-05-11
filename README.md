@@ -1,6 +1,6 @@
 # cda-cookbook-cookbook
 
-TODO: Cookbook for curicullum services
+TODO: Cookbook for curriculum services
 ## Supported Platforms
 
 TODO: Ubuntu-1204
