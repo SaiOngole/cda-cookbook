@@ -7,8 +7,11 @@
 # All rights reserved - Do Not Redistribute
 #
 
+bash "update apt" do
+	code "sudo apt-get update"
+end
 
-package ["git","ruby","rubygems"] do 
+package ["vim","git","ruby","rubygems"] do 
 	action :install
 	
 end
