@@ -11,7 +11,7 @@ bash "update apt" do
 	code "sudo apt-get update"
 end
 
-package ["vim","git","ruby","rubygems"] do 
+package ["curl","vim","git","ruby","rubygems"] do 
 	action :install
 	
 end

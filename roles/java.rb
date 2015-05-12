@@ -12,5 +12,7 @@ default_attributes(
 run_list(
   "recipe[cda-cookbook::default]",
   "recipe[java::oracle]",
-  "recipe[java::oracle_jce]"
+  "recipe[java::oracle_jce]",
+  "recipe[spinen-grails::default]",
+  "recipe[cda-cookbook::gvm]"
 )
