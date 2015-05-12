@@ -1,4 +1,4 @@
-# cda-cookbook-cookbook
+# cda-cookbook
 
 TODO: Cookbook for curriculum services
 ## Supported Platforms
