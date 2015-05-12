@@ -11,5 +11,6 @@ default_attributes(
 )
 run_list(
   "recipe[cda-cookbook::default]",
-  "recipe[java::oracle]"
+  "recipe[java::oracle]",
+  "recipe[java::oracle_jce]"
 )
