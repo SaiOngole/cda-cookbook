@@ -11,7 +11,7 @@ bash "update apt" do
 	code "sudo apt-get update"
 end
 
-package ["curl","vim","git"] do 
+package ["curl","vim","git","git-flow","memcached"] do 
 	action :install
 	
 end
