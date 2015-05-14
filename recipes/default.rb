@@ -15,3 +15,8 @@ package ["curl","vim","git","git-flow","memcached"] do
 	action :install
 	
 end
+
+
+bash "hosts_entry" do
+	code "echo '127.0.0.1 local.amplify.com' | sudo tee -a /etc/hosts"
+end
