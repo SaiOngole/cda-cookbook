@@ -9,6 +9,6 @@ bash "compile_source" do
 	code <<-EOH
 	source "bin/gvm-init.sh"
 	# Huge issue down here. Should not go into production.
-	sudo chmod -R 777 ~/.gvm 
+	sudo chmod -R 755 ~/.gvm 
 	EOH
 end
