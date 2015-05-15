@@ -1,5 +1,3 @@
-1. Change the URL of grails.zip to the s3 bucket address
+1. Look at gvm permissions
 
-2. Look at gvm permissions
-
-3. Clone repos
+2. Clone repos
