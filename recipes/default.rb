@@ -7,22 +7,22 @@
 # All rights reserved - Do Not Redistribute
 #
 
-bash "update apt" do
-	code "sudo apt-get update"
-end
+# bash "update apt" do
+# 	code "sudo apt-get update"
+# end
 
-package ["curl","vim","git","git-flow","memcached"] do 
-	action :install
+# package ["curl","vim","git","git-flow","memcached"] do 
+# 	action :install
 	
-end
+# end
 
 
-bash "hosts_entry" do
-	code "echo '127.0.0.1 local.amplify.com' | sudo tee -a /etc/hosts"
-end
+# bash "hosts_entry" do
+# 	code "echo '127.0.0.1 local.amplify.com' | sudo tee -a /etc/hosts"
+# end
 
 remote_file "/tmp/grails.zip" do
 	# Url broken change this
-	source "https://drive.google.com/uc?export=download&id=0BzsUbU31qKsZSi11MXMyakFMdkk"
+	source "https://github.com/grails/grails-core/releases/download/v2.4.4/grails-2.4.4.zip"
 	mode '0644'
 end
