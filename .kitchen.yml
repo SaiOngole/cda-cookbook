@@ -12,5 +12,5 @@ platforms:
 
 suites:
   - name: default
-    run_list: ['role[java]']
+    run_list: ['role[oracle_java]']
     attributes:
