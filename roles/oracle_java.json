@@ -15,6 +15,7 @@
     "recipe[cda-cookbook::default]",
     "recipe[java::oracle]",
     "recipe[java::oracle_jce]",
+    "recipe[cda-cookbook::bash_profile]",
     "recipe[cda-cookbook::gvm]"
    
   ]

@@ -1,3 +1,7 @@
 1. Look at gvm permissions
 
 2. Clone repos
+
+3. Run init.sh of gvm as vagrant group user
+
+4. Set default attributes. Example in oracle_java.json file.
