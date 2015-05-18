@@ -4,17 +4,15 @@ bash "install_GVM" do
 	EOH
 end
 
+directory "/.gvm" do
+  owner 'root'
+  group 'root'
+  mode '0755'
+end
+
 bash "compile_source" do
 	cwd "/home/vagrant/.gvm"
 	code <<-EOH
 	source "bin/gvm-init.sh"
-	# Huge issue down here. Should not go into production.
-	sudo chmod -R 777 ~/.gvm 
 	EOH
 end
-
-
-
-
-
-

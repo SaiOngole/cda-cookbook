@@ -11,12 +11,14 @@ bash "update apt" do
 	code "sudo apt-get update"
 end
 
-# package ["curl","vim","git","git-flow","memcached","unzip"] do 
-package ["curl","unzip"] do
-	action :install
-	
+package ["curl","vim","git","git-flow","memcached","unzip"] do 
+	action :install	
 end
 
+# file "/etc/hosts" do
+#   content IO.read("/tmp/1.txt")
+
+# end
 
 bash "hosts_entry" do
 	code "echo '127.0.0.1 local.amplify.com' | sudo tee -a /etc/hosts"
