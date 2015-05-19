@@ -39,3 +39,4 @@ Include `cda-cookbook` in your node's `run_list`:
 ## License and Authors
 
 Author:: Sai Ongole (<songole@amplify.com>)
+Author:: Vincent Barresi (<vbarresi@amplify.com>)
