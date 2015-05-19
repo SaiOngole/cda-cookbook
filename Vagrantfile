@@ -76,6 +76,15 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.provision :chef_zero do |chef|
     chef.json = {
+      'rbenv' => {
+      'global' => '1.9.3-p194',
+      'rubies' => [ '1.9.3-p194' ],
+      'gems'   => {
+        '1.9.3-p194' => [
+          { 'name'   => 'bundler' }
+        ]
+      }
+    }
       mysql: {
         server_root_password: 'rootpass',
         server_debian_password: 'debpass',
@@ -87,4 +96,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       'recipe[cda-cookbook::default]'
     ]
   end
+end
+
+config.vm.provision :chef_solo do |chef|
+  chef.cookbooks_path = 'chef/cookbooks'
+  chef.roles_path     = 'chef/roles'
+  chef.json           = {
+   
+  }
+  chef.add_role 'ruby'
 end

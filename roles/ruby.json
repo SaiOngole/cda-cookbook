@@ -1,0 +1,19 @@
+{
+  "name": "ruby",
+  "description": "Install ruby and rbenv",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+
+  "override_attributes" : {
+    "rbenv" : {
+      "global" : "1.9.3-p194",
+      "rubies" : [
+        "1.9.3-p194"
+      ]
+    }
+  },
+   "run_list": [
+    "recipe[ruby_build]",
+    "recipe[rbenv::system]"
+  ]
+}
